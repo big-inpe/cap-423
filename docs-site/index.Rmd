@@ -1,0 +1,24 @@
+% Sobre
+
+Documentação do projeto de disciplina de Ciência de Dados Geoespacial - CAP-423.
+
+## Grupo
+
+Professores:
+
+- Dr. Gilberto Ribeiro
+- Dra. Lubia Vinha
+- Dr. Rafael Santos
+- Dr. Thales Körting
+
+Membros:
+
+- André
+- Antonio
+- Daniel
+- Felipe
+
+## Metodologia
+
+Considerations about sampling, study design, randomization, factors, response variables, etc.
+
