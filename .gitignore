@@ -162,4 +162,9 @@ cython_debug/
 #.idea/
 .Rproj.user
 
-croplands-classification/data/derived/SENTINEL-2_MSI_028022_2021-06-26_2022-08-29_probs_v1.tif
+croplands-classification/data/derived/*probs*
+croplands-classification/data/derived/*bayes*
+.Rprofile
+.Rhistory
+.RData
+.sits/
