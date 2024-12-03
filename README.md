@@ -1,4 +1,4 @@
-<img src="docs-site/images/cap.png" alt="CAP icon" align="right" height="50"/>
+<img src="docs-site/images/cap.png" alt="CAP icon" align="right" height="30"/>
 
 # Ciência de Dados Geoespaciais - CAP-423
 
