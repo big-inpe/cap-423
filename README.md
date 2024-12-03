@@ -18,11 +18,15 @@ Recebe uma bounding box para download de .tif de https://data.inpe.br/bdc/stac/v
 
 ## Opção 2: Codigos Terminal PivosCentrais.py e Hough.py
  Rodar
-   > pip install opencv-python numpy matplotlib
+   > pip install opencv-python numpy matplotlib 
+-------
    > pip install geopandas rasterio shapely
+-------
 Executar o codigo passando o caminho do tif de entrada
+-------
 > python Hough.py <path_to_tif_file>
+--------
 > python PivosCentrais.py <path_to_tif_file>
-
+--------
 Os codigos vão imprimir a quantia de pivos detectados.
 O codigo dos pivosCentrais gera um .shp com a localização dos pivos detectados
