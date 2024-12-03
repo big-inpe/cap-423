@@ -15,7 +15,7 @@ Este projeto tem como objetivo criar uma base de dados com informações extraí
 
 A extração de informações baseadas em imagens de Sensoriamento Remoto é uma abordagem que visa extrair informações relevantes de grandes conjuntos de imagens, considerando o contexto espacial, temporal e espectral. Devido a alta dispobilibilidade de imagens de alta/média resolução, é cada vez mais importante extrair informações de uso e cobertura desse grande volume de dados.
 
-Dado o grande volume de imagens disponíveis, torna-se essencial o desenvolvimento de abordagens que permitam a filtragem e recuperação de informações com base no conteúdo das imagens. No Sensoriamento Remoto, a recuperação baseada em contexto apresenta diversas aplicações práticas, incluindo o monitoramento ambiental, detecção de mudanças em áreas urbanas, classificação de uso e cobertura da terra e o estudo de desastres naturais  
+Dado o grande volume de imagens disponíveis, torna-se essencial o desenvolvimento de abordagens que permitam a filtragem e recuperação de informações com base no conteúdo das imagens. No Sensoriamento Remoto, a recuperação baseada em contexto apresenta diversas aplicações práticas, incluindo o monitoramento ambiental, detecção de mudanças em áreas urbanas, classificação de uso e cobertura da terra e o estudo de desastres naturais.
 
 
 # Materiais e Métodos
