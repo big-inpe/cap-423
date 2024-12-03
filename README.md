@@ -19,4 +19,4 @@ Cada subdiretório possui uma aplicação desenvolvida durante o curso. Organiza
 
 ## Documentação
 
-A documentação completa pode ser encontrada no seguinte [link](...).
+A documentação completa pode ser encontrada no seguinte [link](https://cap-423.netlify.app/).
