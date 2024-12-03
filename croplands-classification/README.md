@@ -26,8 +26,6 @@ tipos de agricultura pelo TerraClass. Os resultados obtidos indicam que
 foi possível identificar com precisão as regiões agrícolas em diferentes
 períodos.
 
-<img src="../docs-site/images/crop_metodologia.png" alt="Metodologia (source: authors)" align="center"/>
-
 ## Organização do repositório
 
 Este repositório está organizado da seguinte forma:
