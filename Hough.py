@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 
 
 # Carregar a imagem de satélite
-imagem = cv2.imread('/mnt/data/clipped.tif','pivo_cristalina.png')
+imagem = cv2.imread(tif_path, cv2.IMREAD_COLOR)
 imagem_rgb = cv2.cvtColor(imagem, cv2.COLOR_BGR2RGB)
 imagem_cinza = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
 
