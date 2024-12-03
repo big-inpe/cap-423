@@ -1,70 +1,75 @@
 ---
-title: "My catchy title for a manuscript"
+title: "CAP-423 - Ciência de Dados Geoespaciais"
 bibliography: crossref.bib
 csl: chicago-author-date.csl
 ---
 
-Author1, Author2, Author3 
+André, Antonio, Daniel, Felipe 
 
-1 Affiliation 1
-2 Affiliation 2
+# Resumo
 
-
-Corresponding author: Author 1
-  
-  
-Article published in ...reference, link, DOI
-
-# Abstract
-
-Phasellus mattis mi et erat tristique, sit amet laoreet diam pulvinar. Sed rhoncus vulputate nibh, nec convallis metus viverra ultricies [@Lehner_2016]. Vivamus cursus feugiat ante, eget tincidunt dui tempus ac. Suspendisse a tempus leo. Curabitur varius neque finibus tincidunt aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris eu ligula faucibus, ultricies risus vel, convallis mi [@Lehner_2016]. Aenean convallis vitae orci nec sollicitudin. Mauris mollis justo id vehicula elementum. Duis et neque eleifend, auctor ligula id, finibus ligula. Aliquam sagittis mauris a nisl consequat, eu mattis ante ultricies. Sed porttitor consequat placerat. Integer aliquam turpis nec tellus condimentum scelerisque. Nulla maximus metus ligula, sit amet sodales magna pellentesque nec. Cras accumsan pretium lectus a convallis.
-
-Keywords: Aliquam sagittis mauris 
+Este projeto tem como objetivo criar uma base de dados com informações extraídas das imagens de satélite disponíveis no INPE através de técnicas de IA para possibilitar a recuperação por conteúdo. Foram desenvolvidas diferentes aplicações voltadas à extração de informações baseadas no conteúdo presente em imagens. Desenvolvou-se aplicações para a identificação de Pivos Centrais, Vias, Queimadas e Agricultura.
 
 
-# Introduction
+# Introdução
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula risus nec libero imperdiet fermentum. Maecenas convallis libero condimentum finibus euismod. Nunc lacinia, leo et sagittis posuere, augue sapien molestie lacus, ut imperdiet velit sem et nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod lorem vitae consequat congue. Donec bibendum, nulla et venenatis tincidunt, nulla quam hendrerit lorem, nec semper nunc tortor sit amet dui. Maecenas sit amet laoreet sem.
+A extração de informações baseadas em imagens de Sensoriamento Remoto é uma abordagem que visa extrair informações relevantes de grandes conjuntos de imagens, considerando o contexto espacial, temporal e espectral. Devido a alta dispobilibilidade de imagens de alta/média resolução, é cada vez mais importante extrair informações de uso e cobertura desse grande volume de dados.
 
-Phasellus mattis mi et erat tristique, sit amet laoreet diam pulvinar. Sed rhoncus vulputate nibh, nec convallis metus viverra ultricies. Vivamus cursus feugiat ante, eget tincidunt dui tempus ac. Suspendisse a tempus leo. Curabitur varius neque finibus tincidunt aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris eu ligula faucibus, ultricies risus vel, convallis mi. Aenean convallis vitae orci nec sollicitudin. Mauris mollis justo id vehicula elementum. Duis et neque eleifend, auctor ligula id, finibus ligula. Aliquam sagittis mauris a nisl consequat, eu mattis ante ultricies. Sed porttitor consequat placerat. Integer aliquam turpis nec tellus condimentum scelerisque. Nulla maximus metus ligula, sit amet sodales magna pellentesque nec. Cras accumsan pretium lectus a convallis.
 
-Aliquam erat volutpat. Cras commodo eros arcu, ac pellentesque augue gravida at. Nulla feugiat dui nec ligula aliquam, ut lacinia ex facilisis. Nunc ut metus pulvinar, pulvinar sem vel, maximus lectus. Nulla commodo lorem vitae porttitor tempus. Nullam sed nibh sed eros aliquet congue. Proin sollicitudin vestibulum ex et tincidunt.
+# Materiais e Métodos
 
-Nulla rutrum leo nec feugiat fringilla. Suspendisse sed hendrerit orci. Fusce quis lobortis nibh, eget luctus mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla nec purus a lectus semper congue sit amet quis ipsum. Mauris accumsan dapibus auctor. Curabitur rhoncus massa eu felis ultricies mattis vel vel sem.
+## Área de Estudo
 
-Aliquam sit amet lacinia massa, nec convallis ex. Nullam porttitor tincidunt mauris, elementum pellentesque velit tristique nec. Nunc a sollicitudin ipsum. Phasellus felis turpis, pretium vel scelerisque eget, ultricies id ex. Mauris in ullamcorper felis. Quisque nec malesuada urna. Integer pellentesque, magna vitae imperdiet ullamcorper, augue lacus blandit tortor, quis vulputate dolor elit non elit. Nullam euismod orci et rhoncus fringilla. Quisque vitae mauris sed eros sagittis lacinia. Vestibulum ipsum lorem, pretium a orci et, sagittis ultrices mi. Ut id eleifend libero. Fusce est ipsum, finibus id quam id, auctor tincidunt tortor. Suspendisse accumsan sit amet sapien at rutrum.
 
-# Material and Methods
+A área de estudo deste trabalho compreende o Distrito Federal (DF) e o estado de Goiás. 
+Situada no bioma do Cerrado, a região de estudo possui uma diversidade de formações florestais e diferentes tipos de uso. Formações florestais como Cerrado e Cerradão são característicos dessa região. Outro alvo relevante são os corpos d'água, como nascentes, pequenos rios e reservatórios. No contexto agrícola, a região apresenta extensas áreas destinadas à produção agrícola e pecuária. A agricultura de larga escala é predominante, com destaque para o cultivo de soja, milho e feijão. Além disso, a presença de pastagens, tanto naturais quanto plantadas, é significativa, refletindo a importância da pecuária na economia regional.  
 
-## item1
 
-Cras sollicitudin massa et felis rhoncus, scelerisque feugiat metus rutrum. Aenean blandit augue id sapien mattis consectetur. Nulla sollicitudin lectus nec massa iaculis, sed aliquet ante consequat. Donec ut vehicula felis. Etiam placerat convallis efficitur. Mauris id lacinia est. Vivamus vitae diam metus. Aliquam eget massa at ante ornare ultrices id nec tortor. Curabitur quam odio, tincidunt sit amet ipsum id, hendrerit viverra erat. Integer lacinia eros nec metus ultrices, vitae semper sapien rhoncus. Nulla id tempor ante. Nullam sem turpis, sagittis nec risus sed, imperdiet scelerisque lacus. Vivamus tincidunt felis a risus iaculis lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+<img src="images/df_go.png" alt="Metodologia (source: authors)" align="center"/>
 
-## item2
+## Metodologia
+
+Para realizar a extração de informações baseada das imagens de satélite considerou-se as etapas a seguir. Foram usadas imagens de um cubo de dados Sentinel-2/MSI com base de imagem. Para cada aplicação, criou-se um método de identificação de alvos em cada cena. O produto de saída corresponde a uma imagem com valores de 0 a 1. 
+
+<img src="images/metodologia.png" alt="Metodologia (source: authors)" align="center"/>
+
+
+## Identificação de Pivôs Centrais
+
+A metodologia é baseada na Transformada de Hough Circular (CHT) e em um classificador Balanced Random Forest (BRF). Utilizou-se os índices de vegetação NDVI/SAVI e os dados de localização de pivos centrais mapeados pela Embrapa.
+
+## Detecção de Queimadas
+
+O processo inicial envolve a geração de amostras e a utilização de dois produtos de referência para desenvolver o sistema de detecção: focos de queima e limiares críticos para a identificação de áreas queimadas. A partir disso, será criada uma metodologia para indicar a presença de cicatrizes de queima. A física do processo de queima indica que a radiância da superfície será reduzida nas áreas afetadas pelo fogo. Portanto, é comum empregar algoritmos que comparam a data da imagem com datas anteriores, a fim de confirmar a presença de cicatrizes de queima no solo. Vale ressaltar que esses algoritmos identificam áreas queimadas, ou seja, cicatrizes de queima, e não os focos ativos de fogo. Inicialmente, utiliza-se a ideia de "evento de fogo", que se refere ao período entre o início e o fim de um agrupamento de focos de queima. Dessa forma, a área queimada é correlacionada com o número de focos de queima que ocorreram antes da data da imagem, permitindo definir uma área queimada com uma data de início anterior ao primeiro foco de queima e data final posterior ao último foco. Conforme demonstrado em estudos anteriores sobre séries temporais, após uma queima, a vegetação tende a se recuperar, evidenciando a resiliência do ecossistema. Essa recuperação da vegetação foi identificada por meio da sobreposição da série temporal com a máscara de nuvens (SCL), em estudos anteriores focados no Sentinel-2. Para melhorar a precisão, a análise também foi realizada com o SCL para remover potenciais confusões geradas pelas máscaras de queima, que poderiam ser confundidas com nuvens, já que ambas as condições causam alterações nas imagens quando comparadas a datas anteriores.
+
+
+## Segmentação de Vias
+
 Vivamus ullamcorper justo sapien, vitae efficitur dui laoreet vitae. Etiam tristique, nibh vitae varius mattis, turpis leo elementum eros, quis dictum dolor enim a nunc. Etiam cursus velit eget nisl gravida, quis faucibus justo congue. Nunc vestibulum venenatis felis. Nullam sit amet nibh erat. Nulla vel ex viverra, fringilla ex eget, luctus enim. Nulla lacinia nisi risus, sit amet laoreet purus mattis quis. Aliquam pellentesque dolor ac metus blandit iaculis. Nulla mollis massa magna, non auctor nibh tempor vitae. Quisque mollis vel dolor eu pretium.
 
+## Detecção de Áreas Agrícolas
 
-## item3
+Foram extraídas amostras do mapa temático TerraClass 2022. Selecionou-se 150 pontos de forma estratificada para cada classe temática: Vegetação, Silvicultura, Pastagem, Agricultura Perene, Agricultura Temporária de um ciclo, Agricultura Temporária de mais de um ciclo e Água. No caso da classe Vegetação, consideraram-se as sub-categorias de Vegetação Primária e Secundária.  Utilizou-se o cubo de dados de imagens Sentinel-2, com composição temporal de 16 dias, com as bandas/índices B02, B8A, B12, EVI, NDVI e SCL. Para cada banda, foi calculada a mediana temporal dos valores registrados em cada data. A partir dessas medianas temporais, aplicou-se a métrica de distância euclidiana para realizar as classificações em cada data analisada. Para minimizar erros de comissão, foi aplicada uma máscara às regiões que não foram classificadas como tipos de agricultura pelo TerraClass. Os resultados obtidos indicam que foi possível identificar com precisão as regiões agrícolas em diferentes períodos.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in blandit est. Fusce quis hendrerit libero, id auctor quam. Duis et vestibulum mauris. Maecenas sagittis condimentum laoreet. Donec vitae lectus eu erat hendrerit facilisis sed eget sem. Nam interdum libero ac ex cursus suscipit.
+# Resultados 
 
-# Results 
-
-
-## item1
+## Identificação de Pivôs Centrais
  
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in blandit est. Fusce quis hendrerit libero, id auctor quam. Duis et vestibulum mauris. Maecenas sagittis condimentum laoreet. Donec vitae lectus eu erat hendrerit facilisis sed eget sem. Nam interdum libero ac ex cursus suscipit.
 
-## item2
+## Detecção de Queimadas
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in blandit est. Fusce quis hendrerit libero, id auctor quam. Duis et vestibulum mauris. Maecenas sagittis condimentum laoreet. Donec vitae lectus eu erat hendrerit facilisis sed eget sem. Nam interdum libero ac ex cursus suscipit.
 
-## item3
+## Segmentação de Vias
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in blandit est. Fusce quis hendrerit libero, id auctor quam. Duis et vestibulum mauris. Maecenas sagittis condimentum laoreet. Donec vitae lectus eu erat hendrerit facilisis sed eget sem. Nam interdum libero ac ex cursus suscipit.
 
+## Detecção de Áreas Agrícolas
 
-# Discussion
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in blandit est. Fusce quis hendrerit libero, id auctor quam. Duis et vestibulum mauris. Maecenas sagittis condimentum laoreet. Donec vitae lectus eu erat hendrerit facilisis sed eget sem. Nam interdum libero ac ex cursus suscipit.
+
+# Discussão
 
 Sed vitae neque diam. Donec facilisis nisi nec mollis finibus. Nullam fermentum, nisl luctus vehicula vestibulum, risus eros molestie enim, eget auctor nunc libero sit amet nulla. Suspendisse ac consectetur sapien. Sed lacinia, neque lacinia blandit congue, sapien erat malesuada augue, ac vestibulum quam metus id odio. Morbi metus magna, tempor quis enim id, commodo eleifend risus. Sed quis mollis lectus, sed imperdiet tortor. Pellentesque eget condimentum velit, a imperdiet ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
 
@@ -78,6 +83,6 @@ Cras id sem augue. Nullam tincidunt vulputate arcu in dignissim. Vivamus gravida
 
 # Acknowledgements 
 
- Fusce quis hendrerit libero, id auctor quam. Duis et vestibulum mauris. Maecenas sagittis condimentum laoreet. Donec vitae lectus eu erat hendrerit facilisis sed eget sem. Nam interdum libero ac ex cursus suscipit.
+Fusce quis hendrerit libero, id auctor quam. Duis et vestibulum mauris. Maecenas sagittis condimentum laoreet. Donec vitae lectus eu erat hendrerit facilisis sed eget sem. Nam interdum libero ac ex cursus suscipit.
 
 # References
