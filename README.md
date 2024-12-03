@@ -18,7 +18,9 @@ Recebe uma bounding box para download de .tif de https://data.inpe.br/bdc/stac/v
 
 ## Opção 2: Codigos Terminal PivosCentrais.py e Hough.py
  Rodar
-   > pip install opencv-python numpy matplotlib 
+   > pip install opencv-python-headless
+-------
+   > pip install numpy matplotlib 
 -------
    > pip install geopandas rasterio shapely
 -------
