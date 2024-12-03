@@ -15,6 +15,8 @@ Este projeto tem como objetivo criar uma base de dados com informações extraí
 
 A extração de informações baseadas em imagens de Sensoriamento Remoto é uma abordagem que visa extrair informações relevantes de grandes conjuntos de imagens, considerando o contexto espacial, temporal e espectral. Devido a alta dispobilibilidade de imagens de alta/média resolução, é cada vez mais importante extrair informações de uso e cobertura desse grande volume de dados.
 
+Dado o grande volume de imagens disponíveis, torna-se essencial o desenvolvimento de abordagens que permitam a filtragem e recuperação de informações com base no conteúdo das imagens. No Sensoriamento Remoto, a recuperação baseada em contexto apresenta diversas aplicações práticas, incluindo o monitoramento ambiental, detecção de mudanças em áreas urbanas, classificação de uso e cobertura da terra e o estudo de desastres naturais  
+
 
 # Materiais e Métodos
 
@@ -24,12 +26,11 @@ A extração de informações baseadas em imagens de Sensoriamento Remoto é uma
 A área de estudo deste trabalho compreende o Distrito Federal (DF) e o estado de Goiás. 
 Situada no bioma do Cerrado, a região de estudo possui uma diversidade de formações florestais e diferentes tipos de uso. Formações florestais como Cerrado e Cerradão são característicos dessa região. Outro alvo relevante são os corpos d'água, como nascentes, pequenos rios e reservatórios. No contexto agrícola, a região apresenta extensas áreas destinadas à produção agrícola e pecuária. A agricultura de larga escala é predominante, com destaque para o cultivo de soja, milho e feijão. Além disso, a presença de pastagens, tanto naturais quanto plantadas, é significativa, refletindo a importância da pecuária na economia regional.  
 
-
 <img src="images/df_go.png" alt="Metodologia (source: authors)" align="center"/>
 
 ## Metodologia
 
-Para realizar a extração de informações baseada das imagens de satélite considerou-se as etapas a seguir. Foram usadas imagens de um cubo de dados Sentinel-2/MSI com base de imagem. Para cada aplicação, criou-se um método de identificação de alvos em cada cena. O produto de saída corresponde a uma imagem com valores de 0 a 1. 
+Para realizar a extração de informações baseada das imagens de satélite considerou-se as etapas a seguir. Utilizaram-se imagens de um cubo de dados Sentinel-2/MSI como base principal. Para cada aplicação, foi desenvolvido um método específico de identificação dos alvos em cada cena analisada. O produto final gerado corresponde a uma imagem resultante com valores de 0 ou 1, representando a ocorrência dos alvos identificados em cada pixel da cena.
 
 <img src="images/metodologia.png" alt="Metodologia (source: authors)" align="center"/>
 
@@ -41,7 +42,6 @@ A metodologia é baseada na Transformada de Hough Circular (CHT) e em um classif
 ## Detecção de Queimadas
 
 O processo inicial envolve a geração de amostras e a utilização de dois produtos de referência para desenvolver o sistema de detecção: focos de queima e limiares críticos para a identificação de áreas queimadas. A partir disso, será criada uma metodologia para indicar a presença de cicatrizes de queima. A física do processo de queima indica que a radiância da superfície será reduzida nas áreas afetadas pelo fogo. Portanto, é comum empregar algoritmos que comparam a data da imagem com datas anteriores, a fim de confirmar a presença de cicatrizes de queima no solo. Vale ressaltar que esses algoritmos identificam áreas queimadas, ou seja, cicatrizes de queima, e não os focos ativos de fogo. Inicialmente, utiliza-se a ideia de "evento de fogo", que se refere ao período entre o início e o fim de um agrupamento de focos de queima. Dessa forma, a área queimada é correlacionada com o número de focos de queima que ocorreram antes da data da imagem, permitindo definir uma área queimada com uma data de início anterior ao primeiro foco de queima e data final posterior ao último foco. Conforme demonstrado em estudos anteriores sobre séries temporais, após uma queima, a vegetação tende a se recuperar, evidenciando a resiliência do ecossistema. Essa recuperação da vegetação foi identificada por meio da sobreposição da série temporal com a máscara de nuvens (SCL), em estudos anteriores focados no Sentinel-2. Para melhorar a precisão, a análise também foi realizada com o SCL para remover potenciais confusões geradas pelas máscaras de queima, que poderiam ser confundidas com nuvens, já que ambas as condições causam alterações nas imagens quando comparadas a datas anteriores.
-
 
 ## Segmentação de Vias
 
@@ -69,20 +69,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in blandit est. F
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in blandit est. Fusce quis hendrerit libero, id auctor quam. Duis et vestibulum mauris. Maecenas sagittis condimentum laoreet. Donec vitae lectus eu erat hendrerit facilisis sed eget sem. Nam interdum libero ac ex cursus suscipit.
 
-# Discussão
-
-Sed vitae neque diam. Donec facilisis nisi nec mollis finibus. Nullam fermentum, nisl luctus vehicula vestibulum, risus eros molestie enim, eget auctor nunc libero sit amet nulla. Suspendisse ac consectetur sapien. Sed lacinia, neque lacinia blandit congue, sapien erat malesuada augue, ac vestibulum quam metus id odio. Morbi metus magna, tempor quis enim id, commodo eleifend risus. Sed quis mollis lectus, sed imperdiet tortor. Pellentesque eget condimentum velit, a imperdiet ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-
-Vivamus ullamcorper justo sapien, vitae efficitur dui laoreet vitae. Etiam tristique, nibh vitae varius mattis, turpis leo elementum eros, quis dictum dolor enim a nunc. Etiam cursus velit eget nisl gravida, quis faucibus justo congue. Nunc vestibulum venenatis felis. Nullam sit amet nibh erat. Nulla vel ex viverra, fringilla ex eget, luctus enim. Nulla lacinia nisi risus, sit amet laoreet purus mattis quis. Aliquam pellentesque dolor ac metus blandit iaculis. Nulla mollis massa magna, non auctor nibh tempor vitae. Quisque mollis vel dolor eu pretium.
+<img src="images/ts_patterns.png" alt="Metodologia (source: authors)" align="center"/>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in blandit est. Fusce quis hendrerit libero, id auctor quam. Duis et vestibulum mauris. Maecenas sagittis condimentum laoreet. Donec vitae lectus eu erat hendrerit facilisis sed eget sem. Nam interdum libero ac ex cursus suscipit.
 
-Integer efficitur viverra elementum. Quisque commodo blandit blandit. Donec eget ex et ante iaculis porta. In sem augue, lacinia ut venenatis ullamcorper, volutpat quis tortor. Proin molestie ultrices purus ac consectetur. Duis ultrices, nunc vel euismod finibus, dui nunc elementum mauris, cursus vestibulum lorem magna in dui. Vivamus euismod consequat dolor.
 
-Cras id sem augue. Nullam tincidunt vulputate arcu in dignissim. Vivamus gravida feugiat turpis at cursus. Donec euismod sit amet orci vel faucibus. In convallis rutrum leo eget elementum. Fusce mattis lacus quis risus volutpat, vel imperdiet ex dapibus. Quisque imperdiet est ac eros dapibus, dapibus aliquam justo porttitor.
+# Discussão
 
-# Acknowledgements 
-
-Fusce quis hendrerit libero, id auctor quam. Duis et vestibulum mauris. Maecenas sagittis condimentum laoreet. Donec vitae lectus eu erat hendrerit facilisis sed eget sem. Nam interdum libero ac ex cursus suscipit.
+Sed vitae neque diam. Donec facilisis nisi nec mollis finibus. Nullam fermentum, nisl luctus vehicula vestibulum, risus eros molestie enim, eget auctor nunc libero sit amet nulla. Suspendisse ac consectetur sapien. Sed lacinia, neque lacinia blandit congue, sapien erat malesuada augue, ac vestibulum quam metus id odio. Morbi metus magna, tempor quis enim id, commodo eleifend risus. Sed quis mollis lectus, sed imperdiet tortor. Pellentesque eget condimentum velit, a imperdiet ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
 
 # References
