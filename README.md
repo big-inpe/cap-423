@@ -12,11 +12,10 @@ Desenvolvou-se aplicações para a identificação de **Pivos Centrais**, **Vias
 
 Cada subdiretório possui uma aplicação desenvolvida durante o curso. Organizados da seguinte forma:
 
-<<<<<<< HEAD
--   [:file_folder: Detecção de Pivôs Centrais](PivosCentrais)
+-   [:file_folder: Detecção de Pivôs Centrais](central-pivot)
 -   [:file_folder: Detecção de Áreas Agrícola](croplands-classification)
--   [:file_folder: Detecção de Cicatrizes de Queimadas](.)
--   [:file_folder: Detecção de Estradas](.)
+-   [:file_folder: Detecção de Cicatrizes de Queimadas](early-ba-detection)
+-   [:file_folder: Detecção de Estradas](road-detection)
 
 ## Documentação
 
