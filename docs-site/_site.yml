@@ -29,9 +29,6 @@ navbar:
   - text: Código
     icon: fa fa-file-code-o
     href: code.html
-  - text: Dados
-    icon: fa fa-table
-    href: data.html
   right:
   - text: Código-fonte
     icon: fa-github-square
