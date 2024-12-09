@@ -26,7 +26,7 @@ Recebe uma bounding box para download de .tif de https://data.inpe.br/bdc/stac/v
 -------
 Executar o codigo passando o caminho do tif de entrada
 -------
-> python Hough.py <path_to_tif_file>
+> python Hough.py <path_to_tif_file_NDVI_BAND>
 --------
 > python PivosCentrais.py <path_to_tif_file>
 --------
