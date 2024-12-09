@@ -1,5 +1,11 @@
+#
+# Load package
+#
 library(sits)
 
+#
+# Read terraclass data
+#
 tc <- sits_cube(
     source = "BDC",
     collection = "SENTINEL-2-16D",
@@ -27,6 +33,9 @@ tc <- sits_cube(
     version = "tc"
 )
 
+#
+# Read classified data
+#
 class <- sits_cube(
     source = "BDC",
     collection = "SENTINEL-2-16D",
@@ -43,7 +52,9 @@ class <- sits_cube(
     )
 )
 
-
+#
+# Apply first mask
+#
 mask <- sits_reclassify(
     class,
     tc,
@@ -62,6 +73,9 @@ mask <- sits_reclassify(
     output_dir = "./data/derived/"
 )
 
+#
+# Apply second mask
+#
 mask <- sits_reclassify(
     mask,
     tc,
