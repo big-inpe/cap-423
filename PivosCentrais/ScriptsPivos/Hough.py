@@ -103,17 +103,17 @@ if circulos is not None:
 numero_de_pivos = len(circulos) if circulos is not None else 0
 
 # Display the results with larger images
-plt.figure(figsize=(15, 7))
-plt.subplot(1, 2, 1)
-plt.title('Imagem Original')
-plt.imshow(array, cmap='gray')
-plt.axis('off')
+# plt.figure(figsize=(15, 7))
+# plt.subplot(1, 2, 1)
+# plt.title('Imagem Original')
+# plt.imshow(array, cmap='gray')
+# plt.axis('off')
 
-plt.subplot(1, 2, 2)
-plt.title('Detecção de Pivôs de Irrigação')
-plt.imshow(cv2.cvtColor(imagem_circulos, cv2.COLOR_BGR2RGB))  # Convert BGR to RGB for display
-plt.axis('off')
-plt.show()
+# plt.subplot(1, 2, 2)
+# plt.title('Detecção de Pivôs de Irrigação')
+# plt.imshow(cv2.cvtColor(imagem_circulos, cv2.COLOR_BGR2RGB))  # Convert BGR to RGB for display
+# plt.axis('off')
+# plt.show()
 
 # Print the number of detected pivots
 print(f"Número de pivôs detectados: {numero_de_pivos}")
