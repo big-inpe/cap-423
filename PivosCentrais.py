@@ -8,7 +8,7 @@ import geopandas as gpd
 def process_raster_and_shapefile(tif_file):
     # Determine the input shapefile path based on the script's location
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    shapefile_input = os.path.join(script_dir, "ANA_PivosCentrais_2022_BR_env_cropped.shp")
+    shapefile_input = os.path.join(script_dir, "./Data/ANA_PivosCentrais_2022_BR_env.shp")
     shapefile_output = os.path.join(script_dir, "cropped_output.shp")
 
     # Get bounding box from raster
