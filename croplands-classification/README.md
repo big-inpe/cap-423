@@ -26,7 +26,7 @@ tipos de agricultura pelo TerraClass. Os resultados obtidos indicam que
 foi possível identificar com precisão as regiões agrícolas em diferentes
 períodos.
 
-<img src="docs-site/images/metodologia_agri.png" alt="Metodologia (source: authors)" align="center" width="60%" height="60%"/>
+<img src="../docs-site/images/metodologia_agri.png" alt="Metodologia (source: authors)" align="center" width="60%" height="60%"/>
 
 
 
