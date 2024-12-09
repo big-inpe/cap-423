@@ -6,6 +6,7 @@ import geopandas as gpd
 
 def determine_closest_year(metadata_year, available_years):
     """Determine the closest year to the metadata year."""
+    print(metadata_year)
     return min(available_years, key=lambda x: abs(x - metadata_year))
 
 def get_metadata_year(tif_file):
@@ -31,7 +32,10 @@ def process_raster_and_shapefile(tif_file):
 
     # Determine the input shapefile path based on the closest year
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    shapefile_input = os.path.join(script_dir, f"../DataPivos/ANA_PivosCentrais_{closest_year}_BR_env.shp")
+    if closest_year == 2022:
+        shapefile_input = os.path.join(script_dir, f"../DataPivos/ANA_PivosCentrais_{closest_year}_BR_env.shp")
+    else:
+        shapefile_input = os.path.join(script_dir, f"../DataPivos/ANA_EMBRAPA_Pivos_Mapeados_-_{closest_year}.shp")
     shapefile_output = os.path.join(script_dir, "cropped_output.shp")
 
     # Get bounding box from raster
