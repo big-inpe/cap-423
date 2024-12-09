@@ -1,6 +1,7 @@
 # Classificação de Regiões Agrícolas
 
 <!-- badges: start -->
+<<<<<<< HEAD
 
 [![renv
 project](https://img.shields.io/badge/renv%20project-OK-brightgreen.svg)](https://rstudio.github.io/renv/)
@@ -25,11 +26,20 @@ foi aplicada uma máscara às regiões que não foram classificadas como
 tipos de agricultura pelo TerraClass. Os resultados obtidos indicam que
 foi possível identificar com precisão as regiões agrícolas em diferentes
 períodos.
+=======
+[![renv project](https://img.shields.io/badge/renv%20project-OK-brightgreen.svg)](https://rstudio.github.io/renv/)
+
+<!-- badges: end -->
+
+Este repositório contêm os códigos, dados e resultados do trabalho de Identificação de Regiões Agrícolas. 
+
+>>>>>>> 50d287ed087136d63b83a5eb064cf2b74d1a3ab3
 
 ## Organização do repositório
 
 Este repositório está organizado da seguinte forma:
 
+<<<<<<< HEAD
 -   `src`: possui o código-fonte
 -   `data/raw`: possui os dados de entrada
 -   `data/output`: possui os dadoa de saída
@@ -39,3 +49,14 @@ Este repositório está organizado da seguinte forma:
 Este repositório usa o gerenciador de pacotes `renv`. O `renv` garante
 que os metadados do ambiente de produção sejam salvos para replicá-los
 posteriomente.
+=======
+- `src`: possui o código-fonte
+- `data/raw`: possui os dados de entrada
+- `data/output`: possui os dadoa de saída
+
+## Reprodução
+
+Este repositório usa o gerenciador de pacotes `renv`. 
+O `renv` garante que os metadados do ambiente de produção sejam salvos para replicá-los posteriomente.
+
+>>>>>>> 50d287ed087136d63b83a5eb064cf2b74d1a3ab3
