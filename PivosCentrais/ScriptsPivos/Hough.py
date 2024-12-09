@@ -50,7 +50,7 @@ if len(sys.argv) != 2:
 
 tif_path = sys.argv[1]
 # tif_path = '/content/S2-16D_V2_020018_20170101_NDVI.tiff'
-shapefile_output_path = '/content/detected_circles.shp'
+shapefile_output_path = 'detected_circles.shp'
 
 # Read the NDVI image
 with rasterio.open(tif_path) as src:
