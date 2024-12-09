@@ -4,7 +4,7 @@
 
 Este projeto tem como objetivo criar uma base de dados com informações extraídas das imagens de satélite disponíveis no INPE através de técnicas de IA para possibilitar a recuperação por conteúdo. Ele contem os codigos para identificar a localização dos pivos usando o banco de da Ana e Embrapa, e identificação automatica por metodo de Hough.
 
-## DownloadTile
+## Utils: DownloadTile
 
 Codigo para ser usado no RStudio, importe de pacotes:
   install.packages("rstac")
