@@ -8,9 +8,25 @@ def determine_closest_year(metadata_year, available_years):
     """Determine the closest year to the metadata year."""
     return min(available_years, key=lambda x: abs(x - metadata_year))
 
-def process_raster_and_shapefile(tif_file, metadata_year):
+def get_metadata_year(tif_file):
+    """Extract the year from the metadata of a .tif file if available."""
+    try:
+        with rasterio.open(tif_file) as src:
+            metadata = src.tags()
+            # Assuming the year is stored in a key like "year" or similar in metadata
+            for key, value in metadata.items():
+                if "year" in key.lower():
+                    return int(value)
+    except Exception as e:
+        print(f"Could not extract year from metadata: {e}")
+    return None
+
+def process_raster_and_shapefile(tif_file):
     # Determine the closest available year
     available_years = [2010, 2014, 2017, 2022]
+
+    # Get the year from metadata, default to 2022 if unavailable
+    metadata_year = get_metadata_year(tif_file) or 2022
     closest_year = determine_closest_year(metadata_year, available_years)
 
     # Determine the input shapefile path based on the closest year
@@ -44,8 +60,7 @@ def process_raster_and_shapefile(tif_file, metadata_year):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process a raster and shapefile.")
     parser.add_argument("tif_file", help="Path to the input .tif file.")
-    parser.add_argument("metadata_year", type=int, help="Year from the image metadata.")
 
     args = parser.parse_args()
 
-    process_raster_and_shapefile(args.tif_file, args.metadata_year)
+    process_raster_and_shapefile(args.tif_file)
