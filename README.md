@@ -1,34 +1,24 @@
+<img src="docs-site/images/cap.png" alt="CAP icon" align="right" height="30"/>
+
 # CAP-423 - Ciência de Dados Geoespaciais
 
-## Detecção de Pivos Centrais
+Este projeto tem como objetivo criar uma base de dados com informações extraídas das imagens de satélite disponíveis no INPE através de técnicas de IA para possibilitar a recuperação por conteúdo. 
+Foram desenvolvidas diferentes aplicações voltadas à extração de informações baseadas no conteúdo presente em imagens. 
+Desenvolvou-se aplicações para a identificação de **Pivos Centrais**, **Vias**, **Queimadas** e **Agricultura**. 
 
-Este projeto tem como objetivo criar uma base de dados com informações extraídas das imagens de satélite disponíveis no INPE através de técnicas de IA para possibilitar a recuperação por conteúdo. Ele contem os codigos para identificar a localização dos pivos usando o banco de da Ana e Embrapa, e identificação automatica por metodo de Hough.
+Conforme a imagem abaixo:
 
-## DownloadTile
+<img src="docs-site/images/metodologia.png" alt="Metodologia (source: authors)" align="center" width="60%" height="60%"/>
 
-Codigo para ser usado no RStudio, importe de pacotes:
-  install.packages("rstac")
-  library(rstac)
- 
-Recebe uma bounding box para download de .tif de https://data.inpe.br/bdc/stac/v1
+</p>
 
-## Opção 1: (Jupyter Notebook) Hough.ipynb e PivosCentrais.ipynb
- Rodar os pip install no colab e fornecer um Tif ao google colab
- Recebe um Tiff e retorna um string indicado se existe pivo ou não, a quantia de pivos, e um shapefile com a localização dos pivos 
+Cada subdiretório possui uma aplicação desenvolvida durante o curso. Organizados da seguinte forma:
 
-## Opção 2: Codigos Terminal PivosCentrais.py e Hough.py
- Rodar
-   > pip install opencv-python-headless
--------
-   > pip install numpy matplotlib 
--------
-   > pip install geopandas rasterio shapely
--------
-Executar o codigo passando o caminho do tif de entrada
--------
-> python Hough.py <path_to_tif_file_NDVI_BAND>
---------
-> python PivosCentrais.py <path_to_tif_file>
---------
-Os codigos vão imprimir a quantia de pivos detectados.
-O codigo dos pivosCentrais gera um .shp com a localização dos pivos detectados
+-   [:file_folder: Detecção de Pivôs Centrais](.)
+-   [:file_folder: Detecção de Áreas Agrícola](croplands-classification)
+-   [:file_folder: Detecção de Cicatrizes de Queimadas](.)
+-   [:file_folder: Detecção de Estradas](.)
+
+## Documentação
+
+A documentação completa pode ser encontrada no seguinte [link](https://cap-423.netlify.app/).
