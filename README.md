@@ -6,8 +6,6 @@ Este projeto tem como objetivo criar uma base de dados com informações extraí
 Foram desenvolvidas diferentes aplicações voltadas à extração de informações baseadas no conteúdo presente em imagens. 
 Desenvolvou-se aplicações para a identificação de **Pivos Centrais**, **Vias**, **Queimadas** e **Agricultura**. 
 
-Conforme a imagem abaixo:
-
 <img src="docs-site/images/metodologia.png" alt="Metodologia (source: authors)" align="center" width="60%" height="60%"/>
 
 </p>
