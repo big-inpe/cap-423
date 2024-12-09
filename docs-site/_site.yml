@@ -1,7 +1,8 @@
 name: 'teste'
 output_dir: docs
 output:
-  html_document:
+  bookdown::html_document2:
+    fig_caption: yes
     css: style.css
     theme: flatly
     df_print: paged
@@ -28,9 +29,6 @@ navbar:
   - text: Código
     icon: fa fa-file-code-o
     href: code.html
-  - text: Dados
-    icon: fa fa-table
-    href: data.html
   right:
   - text: Código-fonte
     icon: fa-github-square

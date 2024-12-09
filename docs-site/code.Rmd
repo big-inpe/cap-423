@@ -1,48 +1,47 @@
-% Code
+% Leitura dos dados produzidos em R
 
-## Introduction
+## Carregando os pacotes {-}
 
-In this analysis.. 
-
-
-## Load packages
-
-The packages necessary for this analysis..
 
 ```{r}
-library(readr)
+library(terra)
+library(sf)
+library(leaflet)
 ```
 
 
-## Data import
-
-Let's first import the data. 
+## Leitura dos dados {-}
 
 ```{r message=FALSE, warning=FALSE}
-data <- read_delim("data/data.csv", delim = ";")
-data
+agri_poll <- sf::st_read("../croplands-classification/data/derived/SENTINEL-2_MSI_028022_2021-06-26_2021-06-26_class_masked-bin.json")
+agri_poll
 ```
 
-## Data tidy
+## Visualização dos dados {-}
 
-Data wrangling here.
+```{r message=FALSE, warning=FALSE}
+plot(agri_poll)
+```
 
-## Data transformation
+## Visualização interativa com leaflet  {-}
 
-We need to do some transformations, create new variables, etc.
+Reprojeção para WGS 84
 
-## Data visualization
+```{r message=FALSE, warning=FALSE}
+sf::st_crs(agri_poll) <- "+proj=aea +lat_0=-12 +lon_0=-54 +lat_1=-2 +lat_2=-22 +x_0=5000000 +y_0=10000000 +ellps=GRS80 +units=m +no_defs"
 
-Produce some plots to understand the data
+agri_poll <- sf::st_transform(agri_poll, 4326)
+```
 
-## Data analysis
-
-Modeling
-
-## Manuscript-ready plots
-
-This could be shown here or in a separate webpage.
+Filtrando somente os poligonos de agricultura e usando o Leaflet para visualizar.
 
 
+```{r message=FALSE, warning=FALSE}
 
+agri_poll <- agri_poll[agri_poll$label == "Agricultura",]
+
+leaflet(agri_poll) |>
+  addTiles() |> 
+  addPolygons(popup = ~label)
+```
 

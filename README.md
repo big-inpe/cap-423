@@ -6,18 +6,16 @@ Este projeto tem como objetivo criar uma base de dados com informações extraí
 Foram desenvolvidas diferentes aplicações voltadas à extração de informações baseadas no conteúdo presente em imagens. 
 Desenvolvou-se aplicações para a identificação de **Pivos Centrais**, **Vias**, **Queimadas** e **Agricultura**. 
 
-Conforme a imagem abaixo:
-
 <img src="docs-site/images/metodologia.png" alt="Metodologia (source: authors)" align="center" width="60%" height="60%"/>
 
 </p>
 
 Cada subdiretório possui uma aplicação desenvolvida durante o curso. Organizados da seguinte forma:
 
--   [:file_folder: Detecção de Pivôs Centrais](PivosCentrais)
+-   [:file_folder: Detecção de Pivôs Centrais](central-pivot)
 -   [:file_folder: Detecção de Áreas Agrícola](croplands-classification)
--   [:file_folder: Detecção de Cicatrizes de Queimadas](.)
--   [:file_folder: Detecção de Estradas](.)
+-   [:file_folder: Detecção de Cicatrizes de Queimadas](early-ba-detection)
+-   [:file_folder: Detecção de Estradas](road-detection)
 
 ## Documentação
 
